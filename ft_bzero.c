@@ -14,7 +14,7 @@
 
 void	*ft_bzero(void *inp, size_t bytes)
 {
-	int	i;
+	int		i;
 	char	*res;
 
 	res = (char *) inp;

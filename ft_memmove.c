@@ -19,8 +19,8 @@ void	*ft_memmove(void *des, const void *org, size_t bytes)
 
 	if (des < org)
 		return (ft_memcpy(des, org, bytes));
-	ndes = (unsigned char*) des;
-	norg = (const unsigned char*) org;
+	ndes = (unsigned char *) des;
+	norg = (const unsigned char *) org;
 	if (!bytes || des == org)
 		return (des);
 	while (bytes--)
