@@ -12,18 +12,19 @@
 
 // #include "libft.h"
 
-char *ft_strdup( const char *o)
+char	*ft_strdup( const char *o)
 {
 	char	*dup;
 	int		size;
-	int 	i;
+	int		i;
 
 	size = ft_strlen(o) + 1;
-	dup = (char * ) malloc (size);
+	dup = (char *) malloc (size);
 	i = 0;
 	if (dup == NULL)
 		return (NULL);
-	while (i < size) {	
+	while (i < size)
+	{
 		dup[i] = o[i];
 		i++;
 	}
