@@ -39,3 +39,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res [i - 2] = '\0';
 	return (res);
 }
+
+// int	main(void)
+// {
+// 	const char
+// }
