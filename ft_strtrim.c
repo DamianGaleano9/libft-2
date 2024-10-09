@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdio.h>
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
@@ -20,9 +21,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if ((set == NULL || s1 == NULL))
 	{
-		return NULL;
+		return (NULL);
 	}
-
 	i = 0;
 	while ((s1[i] != '\0') && (ft_strchr(set, s1[i]) != NULL))
 	{

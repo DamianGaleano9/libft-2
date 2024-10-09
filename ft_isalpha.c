@@ -10,15 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
 	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
-/*									
-int main () {
-    int c = 'a';
-    printf("Is a alplha: %d\n", ft_isalpha(c));
-}
-*/
+
+// int main () {
+//     int c = '0';
+//     printf("Is a alpha: %d\n", ft_isalpha(c));
+// }

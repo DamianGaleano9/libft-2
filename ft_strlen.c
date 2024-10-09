@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
 size_t	ft_strlen(const char *c)
 {
@@ -21,3 +21,11 @@ size_t	ft_strlen(const char *c)
 		i++;
 	return (i);
 }
+
+// int main(void)
+// {
+// 	int res;
+// 	const char str[] = "Damian Mazo Galeano";
+// 	printf("%zu\n", ft_strlen(str));
+// 	return(0);
+// }
