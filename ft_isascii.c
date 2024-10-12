@@ -20,6 +20,9 @@ int	ft_isascii(int c)
 int main()
 {
 	char c = 128;
+	char c = 9;
+	printf("Is a digit: %d\n", ft_isascii(c));
 	printf("Is a digit: %d\n", ft_isascii(c));		
+
 }
 */

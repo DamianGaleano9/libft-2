@@ -26,3 +26,19 @@ void	*ft_memset(void *inp, int val, size_t bytes)
 	}
 	return (inp);
 }
+/*
+int main()
+{
+	char str[6] = "abcde";
+	char str1[6] = "abcde";
+	char str2[6] = "abcde";
+
+	ft_memset(str, 'x', 5);
+	ft_memset(str, 'x', 4);
+	ft_memset(str, 'd', 2);
+
+	printf("%s\n", str);
+	printf("%s\n", str1);
+	printf("%s\n", str2);
+}
+*/
