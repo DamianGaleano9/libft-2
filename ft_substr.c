@@ -6,11 +6,11 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 12:35:56 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/06 13:09:27 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:10:00 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

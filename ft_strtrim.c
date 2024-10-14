@@ -6,36 +6,49 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:01:30 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/08 19:15:14 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:15:46 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+static int	ft_charchecker(const char c, const char *set)
 {
 	size_t	i;
-	size_t	d;
-	char	*finalpointer;
-	size_t	total_size_s1;
 
-	if ((set == NULL || s1 == NULL))
-	{
-		return (NULL);
-	}
 	i = 0;
-	while ((s1[i] != '\0') && (ft_strchr(set, s1[i]) != NULL))
+	while (set[i])
 	{
+		if (set[i] == c)
+			return (1);
 		i++;
 	}
-	total_size_s1 = ft_strlen(s1);
-	d = total_size_s1;
-	while ((d != '\0') && (ft_strchr(set, s1[d] != NULL)))
-	{
-		d++;
-	}
-	finalpointer = ft_substr(s1, i, d, +1);
-	return (finalpointer);
+	return (0);
+}
+
+char	*ft_strtrim(const char *s1, const char *set)
+{
+	char	*str;
+	size_t	i;
+	size_t	n;
+	size_t	k;
+
+	if (!s1 || !set)
+		return (NULL);
+	n = 0;
+	while (s1[n] && ft_charchecker(s1[n], set))
+		n++;
+	k = ft_strlen(s1);
+	while (k > n && ft_charchecker(s1[k - 1], set))
+		k--;
+	str = (char *)malloc(sizeof(*s1) * (k - n + 1));
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (n < k)
+		str[i++] = s1[n++];
+	str[i] = 0;
+	return (str);
 }
 
 // int	main(void){
