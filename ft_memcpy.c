@@ -28,5 +28,5 @@ void	*ft_memcpy(void *des, const void *org, size_t bytes)
 		ndes[i] = norg[i];
 		i++;
 	}
-	return (ndes);
+	return (des);
 }
