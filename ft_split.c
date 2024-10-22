@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: damian <damian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 22:23:18 by damian            #+#    #+#             */
-/*   Updated: 2024/10/09 22:23:18 by damian           ###   ########.fr       */
+/*   Updated: 2024/10/22 15:25:57 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,19 @@ char	**ft_split(const char *s, char delim)
 		while (s[i[0]] && s[i[0]] != delim)
 			i[0]++;
 		if (i[0] > i[2])
-			result [i[1]++] = ft_strndup(s + i[2], i[0] - i[2]);
+		{
+			result[i[1]] = ft_strndup(s + i[2], i[0] - i[2]);
+			if (!result[i[1]])
+			{
+				while (i[1] > 0)
+				{
+					free(result[--i[1]]);
+				}
+				free(result);
+				return (NULL);
+			}
+			i[1]++;
+		}
 	}
 	result[i[1]] = NULL;
 	return (result);
