@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: damian <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 21:47:08 by damian            #+#    #+#             */
-/*   Updated: 2024/09/30 21:47:08 by damian           ###   ########.fr       */
+/*   Updated: 2024/10/22 11:55:07 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,18 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
+
+/*
+int main(void) {
+    char dst[20] = "Hola, ";  // Cadena destino con suficiente espacio
+    const char *src = "mundo!"; // Cadena fuente a concatenar
+    size_t dstsize = sizeof(dst); // Tamaño del destino
+
+    size_t res = ft_strlcat(dst, src, dstsize); // Llamada a ft_strlcat
+
+    printf("Cadena concatenada: %s\n", dst);
+    printf("Longitud total: %zu\n", res);
+
+    return 0;
+}
+*/

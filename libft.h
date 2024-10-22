@@ -6,7 +6,7 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:03:17 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/14 20:03:31 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/22 12:36:59 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>
+# include <stdio.h>
 
 void				*ft_memset(void *b, int c, size_t len);
 size_t				ft_strlen(const char *s);
