@@ -6,7 +6,7 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:59:26 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/06 12:32:19 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:16:33 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,11 @@ char	*ft_strdup( const char *o)
 	}
 	return (dup);
 }
+
+// int main() 
+// {
+// 	char *str = ft_strdup("Damian");
+// 	printf("%s\n", str);
+// 	free (str);
+// 	return 0;
+// }
