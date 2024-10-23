@@ -6,7 +6,7 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 21:18:11 by damian            #+#    #+#             */
-/*   Updated: 2024/10/23 14:10:39 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:00:45 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ size_t	ft_strlen(const char *c)
 
 // int main(void)
 // {
-// 	int res;
-// 	const char str[] = "Damian Mazo Galeano";
+// 	const char str[] = "Damian";
 // 	printf("%zu\n", ft_strlen(str));
 // 	return(0);
 // }

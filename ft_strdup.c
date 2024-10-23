@@ -6,13 +6,13 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:59:26 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/23 14:51:01 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:16:03 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup( const char *o)
+char	*ft_strdup(const char *o)
 {
 	char	*dup;
 	int		size;
@@ -31,7 +31,7 @@ char	*ft_strdup( const char *o)
 	return (dup);
 }
 
-// int main() 
+// int main(void) 
 // {
 // 	char *str = ft_strdup("Damian");
 // 	printf("%s\n", str);

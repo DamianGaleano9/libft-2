@@ -6,7 +6,7 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:03:17 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/23 14:23:32 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:57:35 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putendl_fd(char *str, int fd);
 void				*ft_calloc(size_t num, size_t size_ele);
-char				*ft_strdup( const char *o);
+char				*ft_strdup(const char *o);
 char				*ft_itoa(int n);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
