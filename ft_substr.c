@@ -18,20 +18,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_len;
 
-	if (!s) // si es s 0 ret null
+	if (!s)
 		return (NULL);
 	i = 0;
-	s_len = ft_strlen (s); // calculamos cuantos val hay en s
-	if (start >= s_len) // si el start es mayor que s no se puede tomar car
+	s_len = ft_strlen (s);
+	if (start >= s_len)
 	{
 		res = (char *)malloc(1);
 		if (res)
 			res [0] = '\0';
-		return (res); // se devuelve res como una cad vacia
+		return (res);
 	}
-	if (len > s_len - start) // ajustar len si es nec
+	if (len > s_len - start)
 		len = s_len - start;
-	res = (char *)malloc (len + 1); //new mem cade new + 1 terminador nulo
+	res = (char *)malloc (len + 1);
 	if (res == NULL)
 		return (NULL);
 	while (i++ <= len)
