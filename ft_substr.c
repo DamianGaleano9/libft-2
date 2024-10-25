@@ -6,7 +6,7 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 12:35:56 by dmazo-ga          #+#    #+#             */
-/*   Updated: 2024/10/23 16:48:05 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:27:59 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,21 +21,27 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	i = 0;
-	s_len = ft_strlen (s);
+	s_len = ft_strlen(s);
 	if (start >= s_len)
 	{
 		res = (char *)malloc(1);
 		if (res)
-			res [0] = '\0';
+			res[0] = '\0';
 		return (res);
 	}
 	if (len > s_len - start)
 		len = s_len - start;
-	res = (char *)malloc (len + 1);
+	res = (char *)malloc(len + 1);
 	if (res == NULL)
 		return (NULL);
 	while (i++ <= len)
-		res [i - 1] = s[start + i - 1];
-	res [i - 2] = '\0';
+		res[i - 1] = s[start + i - 1];
+	res[i - 2] = '\0';
 	return (res);
 }
+
+// int main()
+// {
+// 	printf("Substing: %s\n", ft_substr("Hello Damian", 1, 3));
+// 	return (0);
+// }

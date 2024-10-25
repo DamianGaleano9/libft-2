@@ -6,7 +6,7 @@
 /*   By: dmazo-ga <dmazo-ga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 22:23:18 by damian            #+#    #+#             */
-/*   Updated: 2024/10/22 15:25:57 by dmazo-ga         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:06:16 by dmazo-ga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,3 +88,20 @@ char	**ft_split(const char *s, char delim)
 	result[i[1]] = NULL;
 	return (result);
 }
+
+// int	main(void)
+// {
+// 	char	music [] = "Techno, Techouse, House";
+// 	char	delim = ' ';
+// 	char	**split_return;
+// 	size_t	i;
+
+// 	split_return= ft_split(music, delim);
+// 	i = 0;
+// 	while (split_return[i] != NULL)
+// 	{
+// 		printf("%s\n", split_return[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }
